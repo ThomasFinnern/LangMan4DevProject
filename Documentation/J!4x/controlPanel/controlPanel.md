@@ -9,7 +9,7 @@ It uses sub projects to handle a component (back end, backend sys, site)
 Modules and plugins only have one sub project
 
 (2) Project texts
-Matches languages IDs defined in *.ini file against code occurences
+Matches translation IDs defined in *.ini file against code occurences
 Displays lists:
 * Matching:  IDs used in code and defined in *.ini
 * Not found:  IDs used in code and NOT defined in *.ini
