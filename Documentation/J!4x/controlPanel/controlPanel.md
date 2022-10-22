@@ -1,5 +1,5 @@
 
-# Control Panel lang4dev
+# Control Panel
 
 ![controlpanelRSgallery2](https://github.com/ThomasFinnern/J_LangMan4ExtDevProject/blob/main/Documentation/J!4x/controlPanel/ControlPanel.01.png?raw=true)
 

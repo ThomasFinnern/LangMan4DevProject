@@ -1,14 +1,17 @@
 
-## Table of content
+## Table of contents
 
-[Control Panel](#Control-Panel)
+1. [Introduction](#Introduction)
+1. [Control Panel](#Control-panel)
+1. [Projects](#Projects)
+1. [Project texts](#Project-texts)
+1. [Translate](#Translate)
+1. [Configuration](#Configuration)
+1. [Install language manager](#Install-language-manager)
+1. [Maintenance](#Maintenance)
+1. [Sub projects](#Sub-projects)
 
-[Get started: Installation](#Installation)
-[Get started: First steps](#First-steps)
-[Get started: 1\. Create a gallery](#First-steps-1\.-Create-a-gallery)
-[Get started: 2\. Upload images](#First-steps-2\.-Upload-images)
-[Get started: 3\. Create a menu to view galleries](#First-steps-3\.-Create-a-menu-to-view-galleries)
-[Get started: Next steps](#Next-steps)
+[//]: <> (1. [get started](#)
+[//]: <> (1. [](#)
 
-[ ] ToDo: add more
 
