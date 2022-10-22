@@ -12,7 +12,7 @@
 
 These lists are written separately for each sub project
 
-## Matching translation IDs 
+## Matching translation IDs
 
 Handles file separately for sub project type (backend / backend sys / standard (site, modul, plugin))
 
@@ -23,3 +23,8 @@ Handles file separately for sub project type (backend / backend sys / standard (
 ## Support of missing translations
 
 
+## Project texts type backend
+![controlpanelRSgallery2](https://github.com/ThomasFinnern/J_LangMan4ExtDevProject/blob/main/Documentation/J!4x/projectTexts/ProjectTexts.backend.png?raw=true)
+
+## Project texts type backend sys
+![controlpanelRSgallery2](https://github.com/ThomasFinnern/J_LangMan4ExtDevProject/blob/main/Documentation/J!4x/projectTexts/ProjectTexts.backend-sys.png?raw=true)
