@@ -28,3 +28,66 @@ Handles file separately for sub project type (backend / backend sys / standard (
 
 ## Project texts type backend sys
 ![controlpanelRSgallery2](https://github.com/ThomasFinnern/J_LangMan4ExtDevProject/blob/main/Documentation/J!4x/projectTexts/ProjectTexts.backend-sys.png?raw=true)
+
+
+   1) Developer may use Translation IDs like COM_LANG4DEV_... in the TEXT::_('...') definition and place them where these are expected.  
+    This component will collect all and provide prepared lines to include in the lang files
+   2) Write plain text in the TEXT::_('...') definition.  
+    This component will collect all and provide prepared lines to include in the lang files. the lang IDS have to be adjusted though   
+
+### Rules for translation files
+
+- Keep Comments
+- Keep en-en file content order for other languages
+- Not translated lines will be commented at start of line *
+
+Base files:
+
+- May be kept sorted
+
+Database Project
+
+- old source
+
+⇒ Paths E. may be extra) component paths
+
+=D auto load
+
+• • •
+
+Base files:
+
+• • •
+
+• • •
+
+? renamed items => can't be be handled
+
+### Database
+
+... to be continued
+
+### Base files
+
+Collected files for extended but fast search. These may origin in older version or manual added files
+
+==> Additional files to search
+
+- Copy of previous versions
+- Manual user files
+- Scan 4 core translations
+
+  - one file per long
+  - update button
+
+? Import: keep separate or
+
+collect as is
+
+a) 4 delta
+
+- file layout in folders
+
+or side by side
+
+
