@@ -54,4 +54,22 @@
 		<client>1</client>
 		<!--infourl>yyy todo: web on github for component</infourl-->
 	</update>
+	<update>
+		<name>COM_LANG4DEV</name>
+		<description>Update for component lang4dev (3)</description>
+		<element>com_lang4dev</element>
+		<type>component</type>
+		<version>0.20.1.0</version>
+		<downloads>
+			<downloadurl type="upgrade" format="zip">https://github.com/ThomasFinnern/J_LangMan4ExtDev/archive/refs/tags/V0.10.01.zip</downloadurl>
+		</downloads>
+		<tags>
+			<tag>stable</tag>
+		</tags>
+		<maintainer>Thomas Finnnern</maintainer>
+		<maintainerurl>https://github.com/ThomasFinnern</maintainerurl>
+		<targetplatform name="joomla" version="4.*"/>
+		<client>1</client>
+		<!--infourl>yyy todo: web on github for component</infourl-->
+	</update>
 </updates>
