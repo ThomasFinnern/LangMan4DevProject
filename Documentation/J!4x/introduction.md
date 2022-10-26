@@ -1,13 +1,13 @@
 
 # Introduction
 
-**This component supports language translation handling for joomla extensions**
+**This component supports translation ID handling for joomla extension developers**
 It doesn't handle the translation itself (deepl, googl, ...) though
 
-## Use cases:
+## Use cases
 
 1) **Developer translation IDs**
-This component will match languages IDs like COM_LANG4DEV_... defined in *.ini file against code occurences
+This component will match language translation IDs like COM_LANG4DEV_... defined in *.ini file against code occurences
 
    * Matches translation IDs defined in *.ini file against code occurences
    * Provides lines with missing Translation Ids for copy into *.ini
@@ -22,9 +22,9 @@ This component will match languages IDs like COM_LANG4DEV_... defined in *.ini f
    From original "en-GB" *.ini files translation files like "de-DE" can be created. They contain the same translation IDs but the translations string is empty
 
 3) **Component user translations** (intention)  
-    The user of another component should be able to do the translation himself. He can add his own country language files. These are presented in a top bottom compare view where the items lines are prepeared and aligned in main file order. 
-    The user will get aprepared textarea with translation IDs and empty translation strings. He can save these changed files 
+    The user of any component should be able to do the translation himself. He can add his own country language files. These are presented in a top bottom compare view where the items lines are prepeared and aligned in main file order.  
+    The user will see a prepared textarea with translation IDs and empty translation strings. He can save these changed files.
   
-## limitations
-  * This component may allow to replace language files of foreign components but will not exchange lang items in the code of foreign components 
+## Limitations
 
+  *This component allows to replace language files of foreign components but will not exchange lang items in the code of foreign components
