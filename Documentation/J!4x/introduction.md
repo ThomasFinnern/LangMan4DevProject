@@ -19,7 +19,7 @@ This component will match language translation IDs like COM_LANG4DEV_... defined
 
 2) **Translation support**
 
-   From original "en-GB" *.ini files translation files like "de-DE" can be created. They contain the same translation IDs but the translations string is empty
+   Create different language file sets like "de-DE" from original "en-GB" *.ini files. They contain the same translation IDs but the translations string is empty
 
 3) **Component user translations** (intention)  
     The user of any component should be able to do the translation himself. He can add his own country language files. These are presented in a top bottom compare view where the items lines are prepeared and aligned in main file order.  
