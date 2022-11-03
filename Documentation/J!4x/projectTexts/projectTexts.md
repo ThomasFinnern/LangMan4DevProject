@@ -24,10 +24,42 @@ Handles file separately for sub project type (backend / backend sys / standard (
 
 
 ## Project texts type backend
-![controlpanelRSgallery2](https://github.com/ThomasFinnern/J_LangMan4ExtDevProject/blob/main/Documentation/J!4x/projectTexts/ProjectTexts.backend.png?raw=true)
+![controlpanelRSgallery2](https://github.com/ThomasFinnern/J_LangMan4ExtDevProject/blob/main/Documentation/J!4x/projectTexts/ProjectTexts.backend.01.png?raw=true)
+
+(1) Select project
+
+
+(2) Select sub project
+
+
+(3) Sub project: type backend
+
+
+(4) Files list and folder
+
+
+(5) Developer Ad hoc texts 
+
+
+(6) Missing translation IDs
+
+
+(7) Surplus translations
+
+
+(8) Matching translations IDs
+
+
 
 ## Project texts type backend sys
-![controlpanelRSgallery2](https://github.com/ThomasFinnern/J_LangMan4ExtDevProject/blob/main/Documentation/J!4x/projectTexts/ProjectTexts.backend-sys.png?raw=true)
+![controlpanelRSgallery2](https://github.com/ThomasFinnern/J_LangMan4ExtDevProject/blob/main/Documentation/J!4x/projectTexts/ProjectTexts.backend-sys.01.png?raw=true)
+
+(9) Sub project: type backend-sys
+
+
+
+
+
 
 
    1) Developer may use Translation IDs like COM_LANG4DEV_... in the TEXT::_('...') definition and place them where these are expected.  

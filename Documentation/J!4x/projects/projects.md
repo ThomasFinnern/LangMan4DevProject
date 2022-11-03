@@ -17,11 +17,11 @@ Modules and plugins only link to one sub project, components projects keep inter
 
 ## Project list
 
-![Project list](https://github.com/ThomasFinnern/J_LangMan4ExtDevProject/blob/main/Documentation/J!4x/projects/Projects.png?raw=true)
+![Project list](https://github.com/ThomasFinnern/J_LangMan4ExtDevProject/blob/main/Documentation/J!4x/projects/Projects.01.png?raw=true)
 
 ## Edit Project definitions
 
-![Project list](https://github.com/ThomasFinnern/J_LangMan4ExtDevProject/blob/main/Documentation/J!4x/projects/EditProject.png?raw=true)
+![Project list](https://github.com/ThomasFinnern/J_LangMan4ExtDevProject/blob/main/Documentation/J!4x/projects/EditProject.01.png?raw=true)
 
 (1) Project name
 
