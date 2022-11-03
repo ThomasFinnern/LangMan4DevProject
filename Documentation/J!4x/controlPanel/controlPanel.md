@@ -5,7 +5,8 @@
 
 (1) Projects  
 First a project has to be defined. It contains some basic information which are used by 'project texts' and 'translate' functions
-It uses sub projects to handle a component (back end, backend sys, site)
+
+It uses several sub projects to handle a component (back end, backend sys, site)  
 Modules and plugins only have one sub project
 
 (2) Project texts  
