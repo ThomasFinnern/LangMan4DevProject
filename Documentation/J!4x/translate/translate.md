@@ -5,11 +5,11 @@
 
 (1) Select project  
 
+Exchange immediately the main project and reload the page
+
+(2) 
+
 Exchange immediately the main project and sub project
-
-(2) X
-
-
 
 (3) X
 

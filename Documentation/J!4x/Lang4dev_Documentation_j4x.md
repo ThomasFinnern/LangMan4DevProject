@@ -56,7 +56,8 @@ This component will match language translation IDs like COM_LANG4DEV_... defined
 
 (1) Projects  
 First a project has to be defined. It contains some basic information which are used by 'project texts' and 'translate' functions
-It uses sub projects to handle a component (back end, backend sys, site)
+
+It uses several sub projects to handle a component (back end, backend sys, site)  
 Modules and plugins only have one sub project
 
 (2) Project texts  
@@ -91,6 +92,57 @@ Preset source lang ID and target lang ID for use in 'Project Texts' and 'Transla
 ? see config ?
 # Projects
 
+A project contains basic information like a link to the project folder and to the project manifest *.xml file. The information are used by the 'project texts' and 'translate' functions. The project links to sub projects to handle several component types
+
+Projects are defined by the minimum needed informations
+
+## Internal sub projects table
+
+Types of sub projects
+* backend
+* backend sys
+* site,
+* modules
+* plugins
+
+Modules and plugins only link to one sub project, components projects keep internmal three sub projects.
+
+## Project list
+
+![Project list](https://github.com/ThomasFinnern/J_LangMan4ExtDevProject/blob/main/Documentation/J!4x/projects/Projects.01.png?raw=true)
+
+## Edit Project definitions
+
+![Project list](https://github.com/ThomasFinnern/J_LangMan4ExtDevProject/blob/main/Documentation/J!4x/projects/EditProject.01.png?raw=true)
+
+(1) Project name
+
+Choose your name
+
+(2) Project root path
+
+The root of a project may be within a joomla server instance or local on a PC.  
+A project path on joomla starts on the root of the joomla instance for example with administrator/components/com_...
+
+(3) Project twin
+For further development when source lang and destination lang project are on different folders. Here the second destination project has to be referenced
+
+(4) Notes
+Notes for lacal use. No further function
+
+(5) **Detect details**
+
+This button **must** be used after the input is finished. It creates the necessary child projects which are used in functions "Project texts" and "translate"
+
+"Detect Details" can be pressed also later when the component has changed 
+
+Examples
+* after new added site in component
+* after move of language file folder
+
+It is necceasary that the project root path is defined before
+
+Save Button is not needed when detect details was used directly before
 
 # Project texts
 
@@ -99,8 +151,8 @@ Preset source lang ID and target lang ID for use in 'Project Texts' and 'Transla
 * Supports AD HOC Text written insisde Text::_('...') but no ID is found in *.ini
 
 ## Displayed lists:
-* Matching:  IDs used in code and defined in *.ini
-* Not found:  IDs used in code and NOT defined in *.ini
+* Matching:    IDs used in code and defined in *.ini
+* Not found:   IDs used in code and NOT defined in *.ini
 * Superfluous: IDs defined in *.ini but not used in code
 * AD HOC Text: Written insisde Text::_('...') but no ID is found in *.ini
 
@@ -110,24 +162,86 @@ These lists are written separately for each sub project
 
 Handles file separately for sub project type (backend / backend sys / standard (site, modul, plugin))
 
+## "AD HOC" Texts
+Plain text written between the '' inside Text::_('...') instead of a translation ID. The developer may write this text in a hurry and convert it later into a translation ID and add it to the ini file.
 
-## AD HOC Texts
-
+* example Text::_('gallery title')
 
 ## Support of missing translations
 
 
 ## Project texts type backend
-![controlpanelRSgallery2](https://github.com/ThomasFinnern/J_LangMan4ExtDevProject/blob/main/Documentation/J!4x/projectTexts/ProjectTexts.backend.png?raw=true)
+![controlpanelRSgallery2](https://github.com/ThomasFinnern/J_LangMan4ExtDevProject/blob/main/Documentation/J!4x/projectTexts/ProjectTexts.backend.01.png?raw=true)
+
+(1) Select project
+
+Exchange immediately the main project and reload the page
+
+(2) Select sub project
+
+Exchange immediately the sub project and reload the page. It can be used to display all or just one sub project to reduce the amount of files shown
+
+(3) Sub project: type backend
+
+In the gray header the project name with sub project type is displayed.
+
+Each subproject contains the matching or missing translation IDS
+
+(4) Files list and folder
+
+Here the language folder and the language files are named
+
+(5) Developer "Ad hoc" texts
+
+List of not translated plain text inside Text::_('...') occurences. Each line prepears the translation ID extracted from the plain. Also a comment tells about the file occurence with name and line and position.
+
+The list lines can be copied into the *.ini file without changes. The comment behind may be removed but it is working also with it.
+
+Example Text::_('gallery title') would result in something like 
+```
+COM_LANG4DEV_GALLERY_TITLE="gallery title" ; `gallery_display.php [L254C44]
+```
+L: line, C: column
+
+The number in the red circle tells the number of occurences
+
+(6) Missing translation IDs
+
+
+
+
+The number in the red circle tells the number of occurences
+
+(7) Surplus translations
+
+
+
+
+The number in the red circle tells the number of occurences
+
+(8) Matching translations IDs
+
+
+
+
+
+The number in the red circle tells the number of occurences
 
 ## Project texts type backend sys
-![controlpanelRSgallery2](https://github.com/ThomasFinnern/J_LangMan4ExtDevProject/blob/main/Documentation/J!4x/projectTexts/ProjectTexts.backend-sys.png?raw=true)
+![controlpanelRSgallery2](https://github.com/ThomasFinnern/J_LangMan4ExtDevProject/blob/main/Documentation/J!4x/projectTexts/ProjectTexts.backend-sys.01.png?raw=true)
+
+(9) Sub project: type backend-sys
+
+
+
+
+
 
 
    1) Developer may use Translation IDs like COM_LANG4DEV_... in the TEXT::_('...') definition and place them where these are expected.  
     This component will collect all and provide prepared lines to include in the lang files
    2) Write plain text in the TEXT::_('...') definition.  
-    This component will collect all and provide prepared lines to include in the lang files. the lang IDS have to be adjusted though   
+    This component will collect all and provide prepared lines to include in the lang files. the lang IDS have to be adjusted though
 
 ### Rules for translation files
 
@@ -188,11 +302,65 @@ or side by side
 # Translate
 
 ## Section subproject - Base
-![controlpanelRSgallery2](https://github.com/ThomasFinnern/J_LangMan4ExtDevProject/blob/main/Documentation/J!4x/translate/translate.01.header.png?raw=true)
+![controlpanelRSgallery2](https://github.com/ThomasFinnern/J_LangMan4ExtDevProject/blob/main/Documentation/J!4x/translate/translate.01.header.01.png?raw=true)
+
+(1) Select project  
+
+Exchange immediately the main project and reload the page
+
+(2) 
+
+Exchange immediately the main project and sub project
+
+(3) X
+
+
+
+(4) X
+
+
+
+(5) X
+
+
+
+(6) X
+
+
+
+(7) X
+
+
+
+(8) X
+
+
 
 
 ## Section subproject - Base
-![controlpanelRSgallery2](https://github.com/ThomasFinnern/J_LangMan4ExtDevProject/blob/main/Documentation/J!4x/translate/translate.02.en_de.png?raw=true)
+![controlpanelRSgallery2](https://github.com/ThomasFinnern/J_LangMan4ExtDevProject/blob/main/Documentation/J!4x/translate/translate.02.en_de.01.png?raw=true)
+
+
+(1) X
+
+
+
+(2) X
+
+
+
+(3) X
+
+
+
+(4) X
+
+
+
+(5) X
+
+
+
 # Configuration
 
 
