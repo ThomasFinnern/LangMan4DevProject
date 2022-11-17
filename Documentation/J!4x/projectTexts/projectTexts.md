@@ -23,8 +23,25 @@ Plain text written between the '' inside Text::_('...') instead of a translation
 
 ## Support of missing translations
 
+The source code will be searched for all existing translation IDs (like  'COM_LANG4DEV_TITLE') and check them against translations in *.ini files. This results in lists like missing, surplus and matching translation IDs
 
-## Project texts type backend
+## sub project types 
+The program distingues between sub project types to 
+match the different *.ini language files (types) with 
+translation IDs for this type. 
+This leads to reduced search as only files connected
+to the type of Ü.ini file are included in the search
+
+In general a project has one sub project type.
+* modules
+* plugins
+* templates (Not tested yet)
+Components have three sub project types
+* backend
+* backend-sys
+* site
+
+## Project texts type backend 
 ![controlpanelRSgallery2](https://github.com/ThomasFinnern/J_LangMan4ExtDevProject/blob/main/Documentation/J!4x/projectTexts/ProjectTexts.backend.01.png?raw=true)
 
 (1) Select project
@@ -47,7 +64,7 @@ Here the language folder and the language files are named
 
 (5) Developer "Ad hoc" texts
 
-List of not translated plain text inside Text::_('...') occurences. Each line prepears the translation ID extracted from the plain. Also a comment tells about the file occurence with name and line and position.
+List of not translated plain text inside Text::_('...') occurences. Each line prepares the a translation ID extracted from the plain text. Also a comment tells about occurence in the file  with name and line and position.
 
 The list lines can be copied into the *.ini file without changes. The comment behind may be removed but it is working also with it.
 
@@ -61,95 +78,30 @@ The number in the red circle tells the number of occurences
 
 (6) Missing translation IDs
 
-
-
+A list of translation IDs which are not found in the *.ini file. For each item a line in the form of the *.ini is provided to be copied there.
 
 The number in the red circle tells the number of occurences
+The 'toggle missing IDs' button below will show all items or hide them
 
 (7) Surplus translations
 
-
-
+A list of translation IDs which have a translation inside the *.ini files but is not referenced in the code. 
 
 The number in the red circle tells the number of occurences
+The 'toggle missing IDs' button below will show all items or hide them
 
 (8) Matching translations IDs
 
-
-
-
+A list of translation IDs which have a translation inside the *.ini files and is referenced in the code
 
 The number in the red circle tells the number of occurences
+The 'toggle missing IDs' button below will show all items or hide them
 
 ## Project texts type backend sys
 ![controlpanelRSgallery2](https://github.com/ThomasFinnern/J_LangMan4ExtDevProject/blob/main/Documentation/J!4x/projectTexts/ProjectTexts.backend-sys.01.png?raw=true)
 
 (9) Sub project: type backend-sys
 
-
-
-
-
-
-
-   1) Developer may use Translation IDs like COM_LANG4DEV_... in the TEXT::_('...') definition and place them where these are expected.  
-    This component will collect all and provide prepared lines to include in the lang files
-   2) Write plain text in the TEXT::_('...') definition.  
-    This component will collect all and provide prepared lines to include in the lang files. the lang IDS have to be adjusted though
-
-### Rules for translation files
-
-- Keep Comments
-- Keep en-en file content order for other languages
-- Not translated lines will be commented at start of line *
-
-Base files:
-
-- May be kept sorted
-
-Database Project
-
-- old source
-
-⇒ Paths E. may be extra) component paths
-
-=D auto load
-
-• • •
-
-Base files:
-
-• • •
-
-• • •
-
-? renamed items => can't be be handled
-
-### Database
-
-... to be continued
-
-### Base files
-
-Collected files for extended but fast search. These may origin in older version or manual added files
-
-==> Additional files to search
-
-- Copy of previous versions
-- Manual user files
-- Scan 4 core translations
-
-  - one file per long
-  - update button
-
-? Import: keep separate or
-
-collect as is
-
-a) 4 delta
-
-- file layout in folders
-
-or side by side
-
+In the gray header the project name with sub project type is displayed.
+This is just an example how the display continues for the next sub project. Everything else is the same as above
 
