@@ -36,6 +36,7 @@ In general a project has one sub project type.
 * modules
 * plugins
 * templates (Not tested yet)
+
 Components have three sub project types
 * backend
 * backend-sys
