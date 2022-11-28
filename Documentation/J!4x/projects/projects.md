@@ -6,7 +6,13 @@ Projects are defined by the minimum needed informations
 
 ## Internal sub projects table
 
+When **Detect details** button is pressed sub projects are created which matches the languages definition files used inside the project. Then the project folder is examined for the source types and one or more 
+sub projects are created.
+
+The sub projects are normally not shown. Only maintanence has a button for experinced users if need arises
+
 Types of sub projects
+
 * backend
 * backend sys
 * site,
@@ -40,15 +46,15 @@ Notes for lacal use. No further function
 
 (5) **Detect details**
 
-This button **must** be used after the input is finished. It creates the necessary child projects which are used in functions "Project texts" and "translate"
+This button **must** be used after the input is finished. It creates the necessary child sub projects which are used in functions "Project texts" and "translate"
 
-"Detect Details" can be pressed also later when the component has changed 
+"Detect Details" can be pressed also later when the component has changed.
 
-Examples
+Examples:
+
 * after new added site in component
 * after move of language file folder
 
 It is necceasary that the project root path is defined before
 
 Save Button is not needed when detect details was used directly before
-
