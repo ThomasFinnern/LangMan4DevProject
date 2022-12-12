@@ -87,17 +87,18 @@ This defines the characters the language translation IDs start with
 Defines the path an name of the manifest file
 
 (3) Lang on joomla path
-See above (3) On J path. This can not be changes as it it detected when **Detect details** button is pressed in project view
+See above (3) On J path. This can not be changed as it is detected when **Detect details** button is pressed in project view
 
-(4) Instal file name
+(4) Install file name
 
+The script file used on install does contain language translation IDs. It is searched when **Detect details** button is pressed in project view
 
+(5) Parent project (ID) ??? Todo rename 
 
-(5) Parent project (ID) ???? Todo rename 
-
-
+The parent project id is the link to the parent prject which may contain several sub projects
 
 (6) Twin ID
 
-For future feature separate source and destination sub projects
+Reserved for a future feature which uses separate source and destination sub projects
+
 
