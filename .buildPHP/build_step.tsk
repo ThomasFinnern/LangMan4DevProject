@@ -1,0 +1,24 @@
+task:buildRelease
+/type=component
+   //srcRoot="../../J_LangMan4ExtDev"
+/srcRoot="../../LangMan4Dev"
+   // /isNoRecursion=true
+/buildDir="../../J_LangMan4ExtDevProject/.packages"
+   // /adminPath=
+   // /sitePath=
+   // /mediaPath=
+/name=com_lang4dev
+/extension=Lang4Dev
+   // /version=5.0.12.4
+   // /isForceVersion=false
+   // /isIncreaseMajor=true
+   // /isIncreaseMinor=true
+   // /isIncreasePatch=true
+   //    each creation of package will increase the build number
+   // /isIncreaseBuild=false
+/isIncreaseBuild=true
+   // /isBuildFix=true
+   //    release will increase minor and reset revision and build counter
+   // /isBuildRelease=true
+   //    fix will increase revision and reset build counter
+   // /isBuildFix=true

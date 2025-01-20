@@ -1,0 +1,13 @@
+task:exchangeAll_actCopyrightYearLines
+ //srcRoot="../../J_LangMan4ExtDev"
+ /srcRoot="../../LangMan4Dev"
+ // /isNoRecursion=true
+ /includeExt = "php"
+ // excludeExt = "ini"
+ /isWriteListToFile
+ /listFileName="../../J_LangMan4ExtDevProject/.buildPHP/FoundFileNamesList.txt"
+ /yeartext=2024
+ // without: actual year
+ /author="Thomas finnern"
+
+//d:\Entwickl\2024\_gitHub\J_LangMan4ExtDevProject\.buildPHP\exchangeAll_actCopyrightYearLines.tsk 
