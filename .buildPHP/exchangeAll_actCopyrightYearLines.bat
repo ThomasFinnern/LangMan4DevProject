@@ -23,8 +23,8 @@ ECHO.
 
 pushd  ..\..\buildComponentPhp\src
 dir /one /b *.tsk
-echo --- "%ExePath%php.exe" exchangeAll_actCopyrightYearLinesCmd.php -f ../../J_LangMan4ExtDevProject/.buildPHP/exchangeAll_actCopyrightYearLines.tsk %1
-"%ExePath%php.exe" exchangeAll_actCopyrightYearLinesCmd.php -f ../../J_LangMan4ExtDevProject/.buildPHP/exchangeAll_actCopyrightYearLines.tsk %1
+echo --- "%ExePath%php.exe" exchangeAll_actCopyrightYearLinesCmd.php -f ../../LangMan4DevProject/.buildPHP/exchangeAll_actCopyrightYearLines.tsk %1
+"%ExePath%php.exe" exchangeAll_actCopyrightYearLinesCmd.php -f ../../LangMan4DevProject/.buildPHP/exchangeAll_actCopyrightYearLines.tsk %1
 popd
 
 goto :EOF

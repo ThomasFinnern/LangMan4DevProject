@@ -23,8 +23,8 @@ ECHO.
 
 pushd  ..\..\buildComponentPhp\src
 dir /one /b *.tsk
-echo --- "%ExePath%php.exe" buildReleaseCmd.php -f ../../J_LangMan4ExtDevProject/.buildPHP/build_develop.tsk %1
-"%ExePath%php.exe" buildReleaseCmd.php -f ../../J_LangMan4ExtDevProject/.buildPHP/build_develop.tsk %1
+echo --- "%ExePath%php.exe" buildReleaseCmd.php -f ../../LangMan4Dev/.buildPHP/build_develop.tsk %1
+"%ExePath%php.exe" buildReleaseCmd.php -f ../../LangMan4Dev/.buildPHP/build_develop.tsk %1
 popd
 
 goto :EOF

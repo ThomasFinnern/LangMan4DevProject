@@ -25,8 +25,8 @@ ECHO.
 
 pushd  ..\..\buildComponentPhp\src
 dir /one /b *.tsk
-echo --- "%ExePath%php.exe" clean4GitCheckinCmd.php -f ../../J_LangMan4ExtDevProject/.buildPHP/clean4Checkin.tsk %1
-"%ExePath%php.exe" clean4GitCheckinCmd.php -f ../../J_LangMan4ExtDevProject/.buildPHP/clean4Checkin.tsk %1
+echo --- "%ExePath%php.exe" clean4GitCheckinCmd.php -f ../../LangMan4Dev/.buildPHP/clean4Checkin.tsk %1
+"%ExePath%php.exe" clean4GitCheckinCmd.php -f ../../LangMan4Dev/.buildPHP/clean4Checkin.tsk %1
 popd
 
 GOTO :EOF

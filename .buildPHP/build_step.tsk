@@ -3,7 +3,7 @@ task:buildRelease
    //srcRoot="../../J_LangMan4ExtDev"
 /srcRoot="../../LangMan4Dev"
    // /isNoRecursion=true
-/buildDir="../../J_LangMan4ExtDevProject/.packages"
+/buildDir="../../LangMan4Dev/.packages"
    // /adminPath=
    // /sitePath=
    // /mediaPath=

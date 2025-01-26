@@ -5,9 +5,9 @@ task:exchangeAll_actCopyrightYearLines
  /includeExt = "php"
  // excludeExt = "ini"
  /isWriteListToFile
- /listFileName="../../J_LangMan4ExtDevProject/.buildPHP/FoundFileNamesList.txt"
+ /listFileName="../../LangMan4Dev/.buildPHP/FoundFileNamesList.txt"
  /yeartext=2024
  // without: actual year
  /author="Thomas finnern"
 
-//d:\Entwickl\2024\_gitHub\J_LangMan4ExtDevProject\.buildPHP\exchangeAll_actCopyrightYearLines.tsk 
+//d:\Entwickl\2024\_gitHub\LangMan4Dev\.buildPHP\exchangeAll_actCopyrightYearLines.tsk
