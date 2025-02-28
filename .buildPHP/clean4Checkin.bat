@@ -20,11 +20,14 @@ if exist "%ExePath%php.exe" (
 
 REM "C:\Program Files\php82\php.exe" --version
 "%ExePath%php.exe" --version
+
 ECHO ----------------------------------------------
 ECHO.
 
 pushd  ..\..\buildComponentPhp\src
-dir /one /b *.tsk
+REM dir /one /b *.tsk
+ECHO Path: %cd% 
+
 echo --- "%ExePath%php.exe" clean4GitCheckinCmd.php -f ../../LangMan4DevProject/.buildPHP/clean4Checkin.tsk %1
 "%ExePath%php.exe" clean4GitCheckinCmd.php -f ../../LangMan4DevProject/.buildPHP/clean4Checkin.tsk %1
 popd
