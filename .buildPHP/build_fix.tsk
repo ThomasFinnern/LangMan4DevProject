@@ -1,6 +1,6 @@
 task:buildRelease
 /type=component
-	//srcRoot="../../J_LangMan4ExtDev"
+	//srcRoot="../../LangMan4Dev"
 /srcRoot="../../LangMan4Dev"
 	// /isNoRecursion=true
 /buildDir="../../LangMan4DevProject/.packages"

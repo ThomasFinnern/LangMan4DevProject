@@ -1,5 +1,5 @@
 task:clean4Checkin.tsk
 /type=component
-	//srcRoot="../../J_LangMan4ExtDev"
+	//srcRoot="../../LangMan4Dev"
 /srcRoot="../../LangMan4Dev"
 /isNoRecursion=false

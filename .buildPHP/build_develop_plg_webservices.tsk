@@ -1,23 +1,7 @@
 task:buildRelease
 /type=plugin
-   //srcRoot="../../J_LangMan4ExtDev"
 /srcRoot="../../LangMan4Dev/plugins/webservices/lang4dev"
    // /isNoRecursion=true
 /buildDir="../../LangMan4DevProject/.packages"
-   // /adminPath=
-   // /sitePath=
-   // /mediaPath=
-/name=com_lang4dev
+/name=plg_webservices_lang4dev
 /extension=Lang4Dev
-	// /version=5.0.12.4
-	// /isForceVersion=false
-	// /isIncreaseMajor=true
-	// /isIncreaseMinor=true
-	// /isIncreasePatch=true
-	//    each creation of package will increase the build number
-	// /isIncreaseBuild=false
-	// /isIncreaseBuild=true
-	//    release will increase minor and reset revision and build counter
-	// /isBuildRelease=true
-	//    fix will increase revision and reset build counter
-	// /isBuildFix=true
