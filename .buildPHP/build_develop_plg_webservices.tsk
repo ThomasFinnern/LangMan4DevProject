@@ -1,4 +1,4 @@
-task:buildRelease
+task:buildExtension
 /type=plugin
 /srcRoot="../../LangMan4Dev/plugins/webservices/lang4dev"
    // /isNoRecursion=true

@@ -22,12 +22,12 @@ REM "C:\Program Files\php82\php.exe" --version
 ECHO ----------------------------------------------
 ECHO.
 
-pushd  ..\..\buildComponentPhp\src
+pushd  ..\..\buildExtension\src
 REM dir /one /b *.tsk
 ECHO Path: %cd% 
 
-echo --- "%ExePath%php.exe" buildReleaseCmd.php -f ../../LangMan4DevProject/.buildPHP/build_release.tsk %1
-"%ExePath%php.exe" buildReleaseCmd.php -f ../../LangMan4DevProject/.buildPHP/build_release.tsk %1
+echo --- "%ExePath%php.exe" buildExtensionCmd.php -f ../../LangMan4DevProject/.buildPHP/build_release.tsk %1
+"%ExePath%php.exe" buildExtensionCmd.php -f ../../LangMan4DevProject/.buildPHP/build_release.tsk %1
 popd
 
 goto :EOF

@@ -22,7 +22,7 @@ REM "C:\Program Files\php82\php.exe" --version
 ECHO ----------------------------------------------
 ECHO.
 
-pushd  ..\..\buildComponentPhp\src
+pushd  ..\..\buildExtension\src
 REM dir /one /b *.tsk
 ECHO Path: %cd% 
 

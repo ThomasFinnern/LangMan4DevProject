@@ -1,4 +1,4 @@
-task:buildRelease
+task:buildExtension
 /type=component
 /srcRoot="../../LangMan4Dev"
 	// /isNoRecursion=true
@@ -7,5 +7,3 @@ task:buildRelease
 /extension=Lang4Dev
 	//    release will increase minor and reset revision and build counter
 /isBuildRelease=true
-	//    fix will increase revision and reset build counter
-	// /isBuildFix=true
