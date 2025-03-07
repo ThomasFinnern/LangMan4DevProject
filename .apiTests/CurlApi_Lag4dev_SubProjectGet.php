@@ -1,10 +1,13 @@
 <?php
 /**
-GET - Retrieve all sub projects from lang4dev component
+GET - Retrieve one sub project from lang4dev component
 
 https://manual.joomla.org/docs/general-concepts/webservices/
 
 */
+
+
+
 
 // book dev extensions 4 j5: carlos camara
 
@@ -51,7 +54,7 @@ $headers = [
 
 // Add component options
 // $urlYYY =  sprintf('%s/lang4dev/projects?filter[category]=%d',$url,$categoryId);
-$url_option =  sprintf('%s/lang4dev/subprojects',$url_root);
+$url_option =  sprintf('%s/lang4dev/subproject/2', $url_root);
 echo ('URL option: ' . $url_option . "\n");
 
 echo '=== Send ==================================' . "\n";
@@ -85,7 +88,7 @@ if (!empty($response)) {
 	$responseJsonBeatified = json_encode($responseArray, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) . "\n";
     echo $responseJsonBeatified;
 	
-	file_put_contents("subProjects.json", $responseJsonBeatified);
+	file_put_contents("subproject.json", $responseJsonBeatified);
 
 } else {
 	// Error found
@@ -94,7 +97,7 @@ if (!empty($response)) {
     echo '!!! error on curl_exec !!!' . "\n";	
     echo 'Curl error: ' . $errFound . "\n";
 
-	file_put_contents("subProjects.err.txt", $responseJsonBeatified);
+	file_put_contents("subproject.err.txt", $responseJsonBeatified);
 }
 
 echo '=== close curl ============================' . "\n";

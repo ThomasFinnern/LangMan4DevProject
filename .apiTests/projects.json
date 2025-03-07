@@ -1,0 +1,34 @@
+{
+    "links": {
+        "self": "http://127.0.0.1/joomla5x/api/index.php/v1/lang4dev/projects"
+    },
+    "data": [
+        {
+            "type": "projects",
+            "id": "2",
+            "attributes": {
+                "id": 2,
+                "title": "plg_remote_markdown",
+                "name": "plg_remote_markdown",
+                "alias": "plg-remote-markdown",
+                "notes": "",
+                "root_path": "d:\\Entwickl\\2025\\_gitHub\\plg_remote_markdown"
+            }
+        },
+        {
+            "type": "projects",
+            "id": "1",
+            "attributes": {
+                "id": 1,
+                "title": "lang4dev d: ",
+                "name": "com_lang4dev",
+                "alias": "lang4dev-d",
+                "notes": "",
+                "root_path": "d:\\Entwickl\\2025\\_gitHub\\LangMan4Dev "
+            }
+        }
+    ],
+    "meta": {
+        "total-pages": 1
+    }
+}

@@ -1,11 +1,10 @@
 <?php
 /**
-GET - Retrieve all projects from lang4dev component
+GET - Retrieve one project from lang4dev component
 
 https://manual.joomla.org/docs/general-concepts/webservices/
 
 */
-
 
 
 
@@ -54,7 +53,9 @@ $headers = [
 
 // Add component options
 // $urlYYY =  sprintf('%s/lang4dev/projects?filter[category]=%d',$url,$categoryId);
-$url_option =  sprintf('%s/lang4dev/project:1', $url_root);
+// $url_option =  sprintf('%s/lang4dev/project:1', $url_root);
+$url_option =  sprintf('%s/lang4dev/project/2', $url_root);
+//$url_option =  sprintf('%s/lang4dev/project/:1', $url_root);
 // Not OK $url_option =  sprintf('%s/lang4dev',$url_root);
 echo ('URL option: ' . $url_option . "\n");
 
@@ -79,16 +80,26 @@ $response = curl_exec($curl);
 echo '=== response ==============================' . "\n";
 
 if (!empty($response)) {
-    $data =  json_decode ($response);
-
-    echo json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) . "\n";
-
     // The response body is now a stream, so you need to do
     // echo $response->body;
 
+    $responseArray =  json_decode ($response);
+    // $responseArray =  json_decode ($response->body);
+    // $responseArray =  json_decode ($response->data);
+
+	$responseJsonBeatified = json_encode($responseArray, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) . "\n";
+    echo $responseJsonBeatified;
+	
+	file_put_contents("project.json", $responseJsonBeatified);
+
 } else {
-    echo '!!! error on curl_exec !!!' . "\n";
-    echo 'Curl error: ' . curl_error($curl) . "\n";
+	// Error found
+	$errFound = curl_error($curl);
+
+    echo '!!! error on curl_exec !!!' . "\n";	
+    echo 'Curl error: ' . $errFound . "\n";
+
+	file_put_contents("project.err.txt", $responseJsonBeatified);
 }
 
 echo '=== close curl ============================' . "\n";

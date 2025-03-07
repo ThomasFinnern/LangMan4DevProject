@@ -1,0 +1,18 @@
+{
+    "links": {
+        "self": "http://127.0.0.1/joomla5x/api/index.php/v1/lang4dev/project/2"
+    },
+    "data": {
+        "type": "projects",
+        "id": "2",
+        "attributes": {
+            "id": 2,
+            "title": "plg_remote_markdown",
+            "name": "plg_remote_markdown",
+            "alias": "plg-remote-markdown",
+            "notes": "",
+            "root_path": "d:\\Entwickl\\2025\\_gitHub\\plg_remote_markdown",
+            "prjType": 0
+        }
+    }
+}
