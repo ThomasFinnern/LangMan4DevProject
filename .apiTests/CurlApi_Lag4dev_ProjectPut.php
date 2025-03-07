@@ -1,10 +1,10 @@
 <?php
 /**
-GET - Retrieve one project from lang4dev component
+POST - Create one project from lang4dev component
 
 https://manual.joomla.org/docs/general-concepts/webservices/
 
-*/
+ */
 
 // book dev extensions 4 j5: carlos camara
 
@@ -41,30 +41,50 @@ $token = "c2hhMjU2Ojc3OTo3MDIxODdiNTE0N2NjMDY0ZjVlNGY3OTk5NmNiOWZhZTcxYWRkNWVmOW
 // ToDo: $categoryId should be something else
 $categoryId = 2; // Joomla's default "Uncategorized" Category
 
+$data = [
+	"title"       => "plg_remote_markdown",
+	"name"        => "plg_remote_markdown",
+	"alias"       => "plg-remote-markdown II",
+	"notes"       => "second",
+	"root_path"   => "d:\\Entwickl\\2025\\_gitHub\\plg_remote_markdown",
+	"prjType"     => 0,
+	"created_by"  => 779,
+	"ordering"    => 2
+];
+
+
+// 	"params"      => {
+//		"test01"     => "para01",
+//		"test02"     => "para02"
+//	},
+
+$dataString = json_encode($data);
 
 // HTTP request headers
 $headers = [
     'Accept: application/vnd.api+json',
     'Content-Type: application/json',
+    'Content-Length: ' . mb_strlen($dataString),
     sprintf('X-Joomla-Token: %s', trim($token)),
 ];
 
 // Add component options
-$url_option =  sprintf('%s/lang4dev/projects/2', $url_root);
+$url_option =  sprintf('%s/%s',$url_root,'lang4dev/projects');
 echo ('URL option: ' . $url_option . "\n");
 
 echo '=== Send ==================================' . "\n";
 
 curl_setopt_array($curl, [
-//		CURLOPT_URL            => sprintf('%s/lang4dev/projects?filter[category]=%d',$url,$categoryId),
-		CURLOPT_URL            => $url_option,
+//        CURLOPT_URL            => sprintf('%s/%s',$url_root,'content/articles'),
+        CURLOPT_URL            => $url_option,
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_ENCODING       => 'utf-8',
         CURLOPT_MAXREDIRS      => 10,
         CURLOPT_TIMEOUT        => 30,
         CURLOPT_FOLLOWLOCATION => true,
         CURLOPT_HTTP_VERSION   => CURL_HTTP_VERSION_2TLS,
-        CURLOPT_CUSTOMREQUEST  => 'GET',
+        CURLOPT_CUSTOMREQUEST  => 'POST',
+        CURLOPT_POSTFIELDS     => $dataString,
         CURLOPT_HTTPHEADER     => $headers,
     ]
 );
@@ -84,7 +104,7 @@ if (!empty($response)) {
 	$responseJsonBeatified = json_encode($responseArray, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) . "\n";
     echo $responseJsonBeatified;
 	
-	file_put_contents("project.json", $responseJsonBeatified);
+	file_put_contents("projectPut.json", $responseJsonBeatified);
 
 } else {
 	// Error found
@@ -93,7 +113,7 @@ if (!empty($response)) {
     echo '!!! error on curl_exec !!!' . "\n";	
     echo 'Curl error: ' . $errFound . "\n";
 
-	file_put_contents("project.err.txt", $responseJsonBeatified);
+	file_put_contents("projectPut.err.txt", $responseJsonBeatified);
 }
 
 echo '=== close curl ============================' . "\n";

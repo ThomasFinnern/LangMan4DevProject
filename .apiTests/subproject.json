@@ -1,0 +1,23 @@
+{
+    "links": {
+        "self": "http://127.0.0.1/joomla5x/api/index.php/v1/lang4dev/subprojects/2"
+    },
+    "data": {
+        "type": "subprojects",
+        "id": "2",
+        "attributes": {
+            "id": 2,
+            "title": "com_lang4dev_type-backend-sys(0) ",
+            "alias": "com_lang4dev_type-backend-sys(0) ",
+            "prjId": "com_lang4dev",
+            "subPrjType": 1,
+            "root_path": "d:\\Entwickl\\2025\\_gitHub\\LangMan4Dev",
+            "langIdPrefix": "COM_LANG4DEV",
+            "notes": "",
+            "isLangAtStdJoomla": 0,
+            "prjXmlPathFilename": "d:\\Entwickl\\2025\\_gitHub\\LangMan4Dev/lang4dev.xml",
+            "installPathFilename": "d:\\Entwickl\\2025\\_gitHub\\LangMan4Dev/install_langman4dev.php",
+            "parent_id": 0
+        }
+    }
+}

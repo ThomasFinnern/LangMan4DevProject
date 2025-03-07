@@ -1,0 +1,32 @@
+{
+    "links": {
+        "self": "http://127.0.0.1/joomla5x/api/index.php/v1/lang4dev/projects"
+    },
+    "data": {
+        "type": "projects",
+        "id": "3",
+        "attributes": {
+            "id": 3,
+            "title": "plg_remote_markdown",
+            "name": "plg_remote_markdown",
+            "alias": "plg-remote-markdown-ii",
+            "notes": "second",
+            "root_path": "d:\\Entwickl\\2025\\_gitHub\\plg_remote_markdown",
+            "prjType": 0,
+            "params": [],
+            "checked_out": 0,
+            "checked_out_time": null,
+            "created": "2025-03-07 15:31:45",
+            "created_by": 779,
+            "created_by_alias": "",
+            "modified": "2025-03-07 15:31:45",
+            "modified_by": 779,
+            "twin_id": 0,
+            "approved": 1,
+            "asset_id": 220,
+            "access": 1,
+            "version": 1,
+            "ordering": 3
+        }
+    }
+}
