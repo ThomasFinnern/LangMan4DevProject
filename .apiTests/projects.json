@@ -12,7 +12,20 @@
                 "name": "plg_remote_markdown",
                 "alias": "plg-remote-markdown",
                 "notes": "",
-                "root_path": "d:\\Entwickl\\2025\\_gitHub\\plg_remote_markdown"
+                "root_path": "d:\\Entwickl\\2025\\_gitHub\\plg_remote_markdown",
+                "twin_id": 0,
+                "params": "{\"test01\":\"\",\"test02\":\"\"}",
+                "checked_out": 779,
+                "checked_out_time": "2025-03-07 10:43:42",
+                "created": "2025-03-06 17:46:10",
+                "created_by": 779,
+                "created_by_alias": "",
+                "modified": "2025-03-06 17:46:33",
+                "modified_by": 779,
+                "ordering": 2,
+                "approved": 1,
+                "asset_id": 218,
+                "access": 1
             }
         },
         {
@@ -24,7 +37,20 @@
                 "name": "com_lang4dev",
                 "alias": "lang4dev-d",
                 "notes": "",
-                "root_path": "d:\\Entwickl\\2025\\_gitHub\\LangMan4Dev "
+                "root_path": "d:\\Entwickl\\2025\\_gitHub\\LangMan4Dev ",
+                "twin_id": 0,
+                "params": "{\"test01\":\"\",\"test02\":\"\"}",
+                "checked_out": 0,
+                "checked_out_time": "0000-00-00 00:00:00",
+                "created": "2025-02-09 19:40:51",
+                "created_by": 778,
+                "created_by_alias": "",
+                "modified": "2025-02-09 20:26:12",
+                "modified_by": 778,
+                "ordering": 1,
+                "approved": 1,
+                "asset_id": 191,
+                "access": 1
             }
         }
     ],

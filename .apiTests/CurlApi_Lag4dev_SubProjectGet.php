@@ -54,7 +54,8 @@ $headers = [
 
 // Add component options
 // $urlYYY =  sprintf('%s/lang4dev/projects?filter[category]=%d',$url,$categoryId);
-$url_option =  sprintf('%s/lang4dev/subproject/2', $url_root);
+//$url_option =  sprintf('%s/lang4dev/subproject/2', $url_root);
+$url_option =  sprintf('%s/lang4dev/subprojects/2', $url_root);
 echo ('URL option: ' . $url_option . "\n");
 
 echo '=== Send ==================================' . "\n";

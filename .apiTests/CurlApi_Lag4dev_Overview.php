@@ -1,11 +1,10 @@
 <?php
 /**
-GET - Retrieve one project from lang4dev component
+GET - Retrieve lang4dev overview
 
 https://manual.joomla.org/docs/general-concepts/webservices/
 
 */
-
 
 
 // book dev extensions 4 j5: carlos camara
@@ -16,13 +15,6 @@ if ( ! extension_loaded('curl')) {
 }
 
 print '=== Started ============================' . "\n";
-
-// $curl  = curl_init();
-
-//    $url = '(<span lang="en" dir="ltr" class="mw-content-ltr">http://127.0.0.1/joomla5</span>)/api/index.php/v1/lang4dev';
-//    $url = 'http://127.0.0.1/joomla5x/api/index.php/v1/lang4dev';
-//$url = 'http://127.0.0.1/joomla5x/lang4dev/1';
-//$url = 'http://127.0.0.1/joomla5x/api/index.php/v1/content/articles';
 
 // test write to j5x
 $url_root = 'http://127.0.0.1/joomla5x/api/index.php/v1'; // 404 Not Found: The requested URL was not found on this server
@@ -52,7 +44,7 @@ $headers = [
 ];
 
 // Add component options
-$url_option =  sprintf('%s/lang4dev/projects/2', $url_root);
+$url_option =  sprintf('%s/lang4dev', $url_root);
 echo ('URL option: ' . $url_option . "\n");
 
 echo '=== Send ==================================' . "\n";
@@ -86,7 +78,7 @@ if (!empty($response)) {
 	$responseJsonBeatified = json_encode($responseArray, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) . "\n";
     echo $responseJsonBeatified;
 	
-	file_put_contents("project.json", $responseJsonBeatified);
+	file_put_contents("lang4devOverview.json", $responseJsonBeatified);
 
 } else {
 	// Error found
@@ -95,7 +87,7 @@ if (!empty($response)) {
     echo '!!! error on curl_exec !!!' . "\n";	
     echo 'Curl error: ' . $errFound . "\n";
 
-	file_put_contents("project.err.txt", $responseJsonBeatified);
+	file_put_contents("lang4devOverview.err.txt", $responseJsonBeatified);
 }
 
 echo '=== close curl ============================' . "\n";
