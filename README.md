@@ -1,4 +1,4 @@
-# J_LangMan4ExtDevProject
+# LangMan4ExtDevProject
 Support files for LangMan4ExtDev component 
 
 * Update server files 
