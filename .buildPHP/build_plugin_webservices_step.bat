@@ -26,8 +26,8 @@ pushd  ..\..\buildExtension\src
 REM dir /one /b *.tsk
 ECHO Path: %cd% 
 
-echo --- "%ExePath%php.exe" buildExtensionCmd.php -f ../../LangMan4DevProject/.buildPHP/build_develop_plg_webservices.tsk %1
-"%ExePath%php.exe" buildExtensionCmd.php -f ../../LangMan4DevProject/.buildPHP/build_develop_plg_webservices.tsk %1
+echo --- "%ExePath%php.exe" buildExtensionCmd.php -f ../../LangMan4DevProject/.buildPHP/build_plugin_webservices_step.tsk %1
+"%ExePath%php.exe" buildExtensionCmd.php -f ../../LangMan4DevProject/.buildPHP/build_plugin_webservices_step.tsk %1
 popd
 
 goto :EOF

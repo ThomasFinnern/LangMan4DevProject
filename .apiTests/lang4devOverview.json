@@ -1,7 +1,1 @@
-{
-    "errors": {
-        "code": 500,
-        "title": "Internal server error",
-        "detail": "Error: Call to undefined function Finnern\\Component\\Lang4dev\\Api\\View\\Lang4dev\\zzzz() in E:\\wamp64\\www\\joomla5x\\api\\components\\com_lang4dev\\src\\View\\Lang4dev\\JsonapiView.php:62\nStack trace:\n#0 E:\\wamp64\\www\\joomla5x\\api\\components\\com_lang4dev\\src\\Controller\\Lang4devController.php(80): Finnern\\Component\\Lang4dev\\Api\\View\\Lang4dev\\JsonapiView->display()\n#1 E:\\wamp64\\www\\joomla5x\\libraries\\src\\MVC\\Controller\\BaseController.php(730): Finnern\\Component\\Lang4dev\\Api\\Controller\\Lang4devController->displayItem()\n#2 E:\\wamp64\\www\\joomla5x\\libraries\\src\\Dispatcher\\ApiDispatcher.php(61): Joomla\\CMS\\MVC\\Controller\\BaseController->execute('displayitem')\n#3 E:\\wamp64\\www\\joomla5x\\libraries\\src\\Component\\ComponentHelper.php(361): Joomla\\CMS\\Dispatcher\\ApiDispatcher->dispatch()\n#4 E:\\wamp64\\www\\joomla5x\\libraries\\src\\Application\\ApiApplication.php(433): Joomla\\CMS\\Component\\ComponentHelper::renderComponent('com_lang4dev')\n#5 E:\\wamp64\\www\\joomla5x\\libraries\\src\\Application\\ApiApplication.php(116): Joomla\\CMS\\Application\\ApiApplication->dispatch()\n#6 E:\\wamp64\\www\\joomla5x\\libraries\\src\\Application\\CMSApplication.php(306): Joomla\\CMS\\Application\\ApiApplication->doExecute()\n#7 E:\\wamp64\\www\\joomla5x\\api\\includes\\app.php(50): Joomla\\CMS\\Application\\CMSApplication->execute()\n#8 E:\\wamp64\\www\\joomla5x\\api\\index.php(31): require_once('E:\\\\wamp64\\\\www\\\\j...')\n#9 {main}"
-    }
-}
+[]
