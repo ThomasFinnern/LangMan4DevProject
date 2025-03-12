@@ -1,0 +1,7 @@
+task:buildExtension
+/type=plugin
+/srcRoot="../../LangMan4Dev/plugins/webservices/lang4dev"
+   // /isNoRecursion=true
+/buildDir="../../LangMan4DevProject/.packages"
+/name=plg_webservices_lang4dev
+/extension=Lang4Dev
