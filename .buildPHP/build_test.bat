@@ -52,8 +52,9 @@ ECHO.
 pushd  ..\..\buildExtension\src
 ECHO Path: %cd% 
 
-echo --- "%ExePath%php.exe" buildExtensionCmd.php -f ../../LangMan4DevProject/.buildPHP/build.tsk %1 %OptionFile%
-"%ExePath%php.exe" buildExtensionCmd.php -f ../../LangMan4DevProject/.buildPHP/build.tsk %1 %OptionFile%
+rem buildExtension\src\build_tsk\build_test.tsk
+echo --- "%ExePath%php.exe" buildExtensionCmd.php -f ./build_tsk/build_test.tsk %1 %OptionFile%
+"%ExePath%php.exe" buildExtensionCmd.php -f ./build_tsk/build_test.tsk %1 %OptionFile%
 popd
 
 GOTO :EOF
