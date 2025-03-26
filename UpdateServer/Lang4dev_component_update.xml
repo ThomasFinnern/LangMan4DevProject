@@ -15,7 +15,7 @@
 		<maintainer>Thomas Finnnern</maintainer>
 		<maintainerurl>https://github.com/ThomasFinnern</maintainerurl>
 		<targetplatform name="joomla" version="4.*"/>
-		<client>1</client>
+		<client>administrator</client>
 		<infourl>https://github.com/ThomasFinnern/J_LangMan4ExtDev/releases</infourl>
 	</update>
 	<update>
@@ -34,7 +34,7 @@
 		<maintainer>Thomas Finnnern</maintainer>
 		<maintainerurl>https://github.com/ThomasFinnern</maintainerurl>
 		<targetplatform name="joomla" version="4.*"/>
-		<client>1</client>
+		<client>administrator</client>
 		<infourl>https://github.com/ThomasFinnern/J_LangMan4ExtDev/releases</infourl>
 		<changelogurl>https://raw.githubusercontent.com/ThomasFinnern/J_LangMan4ExtDev/main/administrator/components/com_lang4dev/changelog.xml</changelogurl>
 	</update>
@@ -54,7 +54,7 @@
 		<maintainer>Thomas Finnnern</maintainer>
 		<maintainerurl>https://github.com/ThomasFinnern</maintainerurl>
 		<targetplatform name="joomla" version="4.*"/>
-		<client>1</client>
+		<client>administrator</client>
 		<infourl>https://github.com/ThomasFinnern/J_LangMan4ExtDev/releases</infourl>
 		<changelogurl>https://raw.githubusercontent.com/ThomasFinnern/J_LangMan4ExtDev/main/administrator/components/com_lang4dev/changelog.xml</changelogurl>
 	</update> 
