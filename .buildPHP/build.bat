@@ -1,5 +1,5 @@
 @ECHO OFF
-REM build_develop.bat
+REM build.bat
 REM options file can be selected 
 REM d:develop, s:step, f:fix, r:release, m:major
 CLS
