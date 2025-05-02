@@ -98,7 +98,13 @@ Projects are defined by the minimum needed informations
 
 ## Internal sub projects table
 
+When **Detect details** button is pressed sub projects are created which matches the languages definition files used inside the project. Then the project folder is examined for the source types and one or more 
+sub projects are created.
+
+The sub projects are normally not shown. Only maintanence has a button for experinced users if need arises
+
 Types of sub projects
+
 * backend
 * backend sys
 * site,
@@ -132,18 +138,18 @@ Notes for lacal use. No further function
 
 (5) **Detect details**
 
-This button **must** be used after the input is finished. It creates the necessary child projects which are used in functions "Project texts" and "translate"
+This button **must** be used after the input is finished. It creates the necessary child sub projects which are used in functions "Project texts" and "translate"
 
-"Detect Details" can be pressed also later when the component has changed 
+"Detect Details" can be pressed also later when the component has changed.
 
-Examples
+Examples:
+
 * after new added site in component
 * after move of language file folder
 
 It is necceasary that the project root path is defined before
 
 Save Button is not needed when detect details was used directly before
-
 # Project texts
 
 * Matches translation IDs defined in *.ini file against code occurences
@@ -353,19 +359,77 @@ Each of the translation files can be marked seperately to be safed with the butt
 Sets the marker for all translation files to be safed with the button "" see (8)above)
 # Configuration
 
-
-
 ## Tab general
+
 ![controlpanelRSgallery2](https://github.com/ThomasFinnern/J_LangMan4ExtDevProject/blob/main/Documentation/J!4x/config/config.general.png?raw=true)
 
+(1) Comment prepared IDs  (??? ToDo: uper case in Translation for all IDS)
+
+In the project texts the translation lines may be prepended with a ";" comment character. Lines there are prepared to be copied into *.ini files.
+
+With ';' in front the lines may be have new Translation IDs which are not translated yet but prepared inside the *.ini file
+
+(??? ToDo move to project texts text ???)
+
 ## Tab project texts
+
 ![controlpanelRSgallery2](https://github.com/ThomasFinnern/J_LangMan4ExtDevProject/blob/main/Documentation/J!4x/config/config.projectTexts.png?raw=true)
 
+(1) Search translation IDs
+
+On "No" restrict the search to not search for translation IDs  like "COM_LANG4DEV_... " in project Texts view
+
+(2) Search translation strings
+
+On "YES" do additional search for "AD HOC" Texts, plain text written between the '' inside Text::_('...') instead of a translation ID.
+
 ## Tab translation
+
 ![controlpanelRSgallery2](https://github.com/ThomasFinnern/J_LangMan4ExtDevProject/blob/main/Documentation/J!4x/config/config.translation.png?raw=true)
 
+Define the language settings with which the project is started. This may be overwritten in the actual view by the user.
+
+(1) Main language ID
+
+Source language ID for the *.ini files
+
+(2) Transation language ID
+
+Target language ID for the *.ini files
+
+(3) Show all translations
+
+? not used ?
+
+(4) Edit and save "Main" language file : ToDo: change the string in *.ini
+
+Future feature
+ToDo: hide value
+
 ## Tab debug
+
 ![controlpanelRSgallery2](https://github.com/ThomasFinnern/J_LangMan4ExtDevProject/blob/main/Documentation/J!4x/config/config.debug.png?raw=true)
+
+(1) Debug Backend
+Activates debug functionality. This does write calling parameters and logs some of the used files / classes in a log file.
+
+Attention: On Yes to Debug a log file per day will be created in folder '...//joomla root/administrator/log' and notices may appear on top of a form. Please delete log files regularly"
+
+> not invented here but may appear in the future
+
+(2) Debug Site
+
+Enables debug messages in site form.
+
+Attention: Using debug on the frontend will create a lot of text in the log files and may get stuck when a lot of users are active. It is best used on the local test web server.
+
+> not invented here but may appear in the future
+
+(3) Develop
+
+Activates developer functions. Additional 'info' will appear in HTML pages. For example a task list for open tasks may appear.
+
+More functions buttons may appear in the maintenance view. The additional function may not work  or destroy parts so use with care
 # Install language manager 
 
 for developers com_lang4dev
@@ -382,38 +446,108 @@ This page supports special function which are not needed on the normal translati
 Enables the display (check) of the sub projects inside the "standard" projects
 # Sub projects
 
-Enables the display (check) of the sub projects inside the "standard" projects
+Enables the display (check) of the sub projects inside the "standard" projects  
+This view is intended for Joomla! experienced developers only.
+
+The sub projects are created from the project view when **Detect details** 
+button is pressed in project view. Then the project folder is examined 
+for the source types and one or more sub projects are created.
 
 The program distingues between sub project types to 
 match the different *.ini language files (types) with 
 translation IDs for this type. 
 This leads to reduced search as only files connected
-to the type of Ü.ini file are included in the search
+to the type of '*.ini' file are included in the search
 
 In general a project has one sub project type.
+
 * modules
 * plugins
 * templates (Not tested yet)
 
 Components have three sub project types
+
 * backend
 * backend-sys
 * site
 
-
-
 ## Sub project list
 
+![controlpanelRSgallery2](https://github.com/ThomasFinnern/J_LangMan4ExtDevProject/blob/main/Documentation/J!4x/subProjects/Subprojects.png?raw=true)
 
-## Edit sub üproject
+(1) Title
+
+See ID
+
+(2) ID
+
+The ID is created by the component name and the sub type of the component.
+
+(3) On J path
+
+Defines with a 1 that the project keeps the language files in old Joomla! 2.5 fashion.  
+
+* Languages files are besides joomla files and not in languages folder inside the project
+* In the development folder (like in installation) the language files are addressed differently in the manifest XML file
+
+(4) Root path subproject
+
+The root path of the project may be different ot the place of the manifest file
+For example a component may contain a site and a administration folder.
+The path will be either root path on server or PC or the ??? administartor path ???
+
+## Edit sub project
 
 ### Section subproject - Base
 
 ![controlpanelRSgallery2](https://github.com/ThomasFinnern/J_LangMan4ExtDevProject/blob/main/Documentation/J!4x/subProjects/Subproject.01.png?raw=true)
 
+
+(1) ID 
+
+The subproject ID is the component name
+
+(2) Sub type
+
+See above: The sub  type may be selected more explicit by name 
+
+(3) Root path subproject
+
+This is the base path to the sub project type ???
+
+(4) Notes
+
+The user may add notes to this subproject for later reference
+
 ## Section subproject - Details
 
 ![controlpanelRSgallery2](https://github.com/ThomasFinnern/J_LangMan4ExtDevProject/blob/main/Documentation/J!4x/subProjects/Subproject.02.png?raw=true)
+
+(1) Prefix
+
+This defines the characters the language translation IDs start with 
+**COM_LANGDEV**_TITLE="..."
+
+(2) XML file aname
+
+Defines the path an name of the manifest file
+
+(3) Lang on joomla path
+See above (3) On J path. This can not be changed as it is detected when **Detect details** button is pressed in project view
+
+(4) Install file name
+
+The script file used on install does contain language translation IDs. It is searched when **Detect details** button is pressed in project view
+
+(5) Parent project (ID) ??? Todo rename 
+
+The parent project id is the link to the parent prject which may contain several sub projects
+
+(6) Twin ID
+
+Reserved for a future feature which uses separate source and destination sub projects
+
+
 
 
 [ ] ToDo: How to get help -> github issues 
