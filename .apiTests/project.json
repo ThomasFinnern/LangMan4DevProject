@@ -17,8 +17,8 @@
                 "test01": "",
                 "test02": ""
             },
-            "checked_out": 779,
-            "checked_out_time": "2025-03-07 10:43:42",
+            "checked_out": 0,
+            "checked_out_time": null,
             "created": "2025-03-06 17:46:10",
             "created_by": 779,
             "created_by_alias": "",
