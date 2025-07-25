@@ -86,19 +86,21 @@ if (!empty($response)) {
     // $responseArray =  json_decode ($response->body);
     // $responseArray =  json_decode ($response->data);
 
-	$responseJsonBeatified = json_encode($responseArray, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) . "\n";
-    echo $responseJsonBeatified;
+	$responseJsonBeautified = json_encode($responseArray, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) . "\n";
+    echo $responseJsonBeautified;
 	
-	file_put_contents("projects.json", $responseJsonBeatified);
+	file_put_contents("projects.json", $responseJsonBeautified);
 
 } else {
 	// Error found
 	$errFound = curl_error($curl);
+    $errorMessage = curl_error($this->oCurl);
 
     echo '!!! error on curl_exec !!!' . "\n";	
     echo 'Curl error: ' . $errFound . "\n";
+    echo 'Curl message: ' . $errorMessage . "\n";
 
-	file_put_contents("projects.err.txt", $responseJsonBeatified);
+	file_put_contents("projects.err.txt", $errorMessage);
 }
 
 echo '=== close curl ============================' . "\n";
