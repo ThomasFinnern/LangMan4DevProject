@@ -1,0 +1,7 @@
+task:put
+/baseUrl="http://127.0.0.1/joomla5x/api/index.php"
+/apiPath="v1/lang4dev/projects"
+/joomlaTokenFile="d:\Entwickl\2025\_gitHub\xTokenFiles\token_joomla5x.txt"
+// /responseFile="d:\Entwickl\2025\_gitHub\LangMan4DevProject\.apiTests\l4d_getProjects.json"
+/responseFile=""
+
