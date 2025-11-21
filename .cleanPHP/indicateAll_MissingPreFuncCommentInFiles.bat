@@ -1,7 +1,10 @@
 @ECHO OFF
-REM build_fix.bat
+REM indicateAll_MissingPreFuncCommentInFiles.bat
 REM
 CLS
+
+ECHO PHP indicateAll_MissingPreFuncCommentInFiles.tsk
+ECHO.
 
 REM Path for calling
 set ExePath=e:\wamp64\bin\php\php8.4.5\
@@ -16,17 +19,25 @@ if exist "%ExePath%php.exe" (
     set ExePath=
 )
 
+REM "%ExePath% --version
 "%ExePath%php.exe" --version
 
 ECHO ----------------------------------------------
 ECHO.
 
+REM more options 
+
+set OptionFile=
+
+ECHO ----------------------------------------------
+ECHO.
+
 pushd  ..\..\buildExtension\src
-REM dir /one /b *.tsk
 ECHO Path: %cd% 
 
-echo --- "%ExePath%php.exe" exchangeAll_actCopyrightYearLinesCmd.php -f ../../LangMan4DevProject/.buildPHP/exchangeAll_actCopyrightYearLines.tsk %1
-"%ExePath%php.exe" exchangeAll_actCopyrightYearLinesCmd.php -f ../../LangMan4DevProject/.buildPHP/exchangeAll_actCopyrightYearLines.tsk %1
+echo --- "%ExePath%php.exe" doFileTasksCmd.php -f "../../LangMan4Dev/.cleanPHP/indicateAll_MissingPreFuncCommentInFiles.tsk" %1
+"%ExePath%php.exe" doFileTasksCmd.php -f "../../LangMan4Dev/.cleanPHP/indicateAll_MissingPreFuncCommentInFiles.tsk" %1
+                       
 popd
 
 goto :EOF

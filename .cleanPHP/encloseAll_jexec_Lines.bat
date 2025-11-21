@@ -1,8 +1,9 @@
 @ECHO OFF
-REM cleanUp4Checkin.bat
-REM Task to do before check in like remove space at the end of lines
+REM encloseAll_jexec_Lines.bat
+REM
 CLS
-ECHO PHP cleanUp4CheckinCmd.php
+
+ECHO PHP doFileTasksCmd.php encloseAll_jexec_Lines.tsk
 ECHO.
 
 REM Path for calling
@@ -18,26 +19,33 @@ if exist "%ExePath%php.exe" (
     set ExePath=
 )
 
+REM "%ExePath% --version
 "%ExePath%php.exe" --version
 
 ECHO ----------------------------------------------
 ECHO.
 
+REM more options 
+
+set OptionFile=
+
+ECHO ----------------------------------------------
+ECHO.
+
 pushd  ..\..\buildExtension\src
-REM dir /one /b *.tsk
 ECHO Path: %cd% 
 
-echo --- "%ExePath%php.exe" clean4GitCheckinCmd.php -f ../../LangMan4DevProject/.buildPHP/clean4Checkin.tsk %1
-"%ExePath%php.exe" clean4GitCheckinCmd.php -f ../../LangMan4DevProject/.buildPHP/clean4Checkin.tsk %1
+echo --- "%ExePath%php.exe" doFileTasksCmd.php -f ../../LangMan4Dev/.cleanPHP/encloseAll_jexec_Lines.tsk %1
+"%ExePath%php.exe" doFileTasksCmd.php -f ../../LangMan4Dev/.cleanPHP/encloseAll_jexec_Lines.tsk %1
+
 popd
 
-GOTO :EOF
+goto :EOF
 
 REM ------------------------------------------
 REM Adds given argument to the already known command arguments
 :AddNextArg
-	Set NextArg=%*
-	Set CmdArgs=%CmdArgs% %NextArg%
-	ECHO  '%NextArg%'
+    Set NextArg=%*
+    Set CmdArgs=%CmdArgs% %NextArg%
+    ECHO  '%NextArg%'
 GOTO :EOF
-

@@ -1,0 +1,12 @@
+task:formatAll_ini_Lines
+	// /callerProjectId=RSG2
+/srcRoot="../../LangMan4Dev"
+	// /isNoRecursion=true
+/includeExt="ini"
+	// /excludeFolderList=excluded
+	// /excludeFolderList=postponed
+/isLogDev=true
+/isLogOnly=true
+/isRemoveDoubles=true
+	// /isForceExtensionId="..."
+	
