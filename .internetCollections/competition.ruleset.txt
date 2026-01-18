@@ -1,0 +1,38 @@
+
+Rulteset for checking INI files 
+
+https://nx-designs.ch/apps/joomet?fbclid=IwAR0ubkjt3tQh8yDQiDNDnccfPo9cx1aWDCEZuV1HRnfNMYCvnRQF6uQhuso
+
+Ruleset
+The Joomet FileAnalyser checks for these rules:
+
+ Filename Format
+The file name of a Joomla! language file should correspond to a given scheme, the FileAnalyser checks if this is the case.
+
+ All Uppercase
+key
+Key values must always be capitalised
+
+ Valid Characters
+key
+Key values may only contain the characters A-Z 0-9 or _ (underscore), Spaces are not allowed
+
+ Duplicated Keys
+key
+Key values should only be used once, otherwise previous values will be overwritten
+
+ Encapsulation
+value
+Values must be encapsulated in double quotes otherwise the value is invalid or the language file is ignored
+
+ No backslash on last position
+value
+The last character in the value must not be a backslash, otherwise the language file could not be read correctly
+
+ Double quotes in Value
+value
+Double quotes must be escaped correctly
+
+ Balanced HTML Tags
+value
+HTML tags must be closed correctly
